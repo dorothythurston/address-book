@@ -1,1 +1,16 @@
 <h3>Add a new Contact</h3>
+<form {{action "save" on="submit"}}>
+  <div>
+    {{input value=contact.firstName placeholder="Contact's first name"}}
+  </div>
+
+  <div>
+    {{input value=contact.lastName placeholder="Contact's last name"}}
+  </div>
+
+  <div>
+    {{input value=contact.phone placeholder="Contact's phone number"}}
+  </div>
+
+  <input type="submit"/>
+</form>
